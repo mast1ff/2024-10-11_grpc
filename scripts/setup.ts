@@ -1,10 +1,7 @@
 import { resolve } from "node:path";
 import { $ } from "zx";
 
-const protocToolPath = resolve(
-  process.cwd(),
-  "node_modules/.bin/grpc_tools_node_protoc"
-);
+const protocToolPath = resolve(process.cwd(), "node_modules/.bin/grpc_tools_node_protoc");
 const protocGenTs = resolve(process.cwd(), "node_modules/.bin/protoc-gen-ts");
 
 $`${protocToolPath} \
