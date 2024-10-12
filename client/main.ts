@@ -1,6 +1,6 @@
 import { credentials } from "@grpc/grpc-js";
-import { GreeterClient } from "../hello/hello_grpc_pb";
-import { HelloRequest, HelloReply } from "../hello/hello_pb";
+import { GreeterClient } from "../services/hello/hello_grpc_pb";
+import { HelloRequest, HelloReply } from "../services/hello/hello_pb";
 import { Hono } from "hono";
 import { serve } from "@hono/node-server";
 

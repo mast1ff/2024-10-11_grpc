@@ -5,8 +5,11 @@ import {
   ServerUnaryCall,
   type UntypedHandleCall,
 } from "@grpc/grpc-js";
-import { GreeterService, IGreeterServer } from "../hello/hello_grpc_pb";
-import { HelloReply, HelloRequest } from "../hello/hello_pb";
+import {
+  GreeterService,
+  IGreeterServer,
+} from "../services/hello/hello_grpc_pb";
+import { HelloReply, HelloRequest } from "../services/hello/hello_pb";
 
 const bootstrap = () => {
   const server = new Server();
